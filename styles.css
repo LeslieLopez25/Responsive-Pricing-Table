@@ -1,146 +1,191 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-    background: #647df9;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    hsl(0, 100%, 26.3%) 0,
+    hsl(345.2, 100%, 50%) 100%
+  );
+  padding: 1.25rem;
+  min-height: 39.06rem;
+}
+
+body::before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    hsl(342.1, 100%, 42.2%) 0,
+    hsl(330.1, 100%, 50%) 100%
+  );
+  clip-path: circle(55% at right 30%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .content {
-    max-width: 1090px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  max-width: 68.12rem;
+  z-index: 2;
 }
 
 .content .card {
-    background: #fff;
-    width: calc(33% - 20px);
-    text-align: center;
-    padding: 15px 30px 30px 30px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 0.93rem 1.87rem 1.87rem 1.87rem;
+  width: calc(33% - 1.25rem);
+  box-shadow: 0 5px 10px hsl(0, 0%, 0%, 0.9);
 }
 
 .content .card .top {
-    height: 130px;
-    color: #fff;
-    padding: 12px 0 0 0;
-    clip-path: polygon(0 0, 100% 0, 100% 53%, 49% 100%, 0 53%);
+  color: hsl(0, 0%, 100%);
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+  padding: 0.75rem 0 0 0;
+  height: 8.12rem;
 }
 
 .content .card .top .title {
-    font-size: 27px;
-    font-weight: 600;
+  font-size: 1.68rem;
+  font-weight: 600;
 }
 
 .content .card .top .price-sec {
-    margin-top: -10px;
-    font-weight: 600;
+  font-weight: 600;
+  margin-top: -0.62rem;
 }
 
 .content .card .top .price {
-    font-size: 45px;
+  font-size: 2.81rem;
 }
 
 .content .card .info {
-    font-size: 16px;
-    margin-top: 20px;
+  font-size: 1rem;
+  margin-top: 1.25rem;
 }
 
 .content .card .details .one {
-    margin-top: 25px;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.93rem;
+  position: relative;
+  margin-top: 1.56rem;
 }
 
 .content .card .details .one::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    background: #ddd;
-    height: 1px;
-    left: 0;
-    top: -12px;
-    border-radius: 25px;
+  content: "";
+  background: hsl(0, 0%, 86.7%);
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  width: 100%;
+  height: 0.062rem;
+  border-radius: 1.56rem;
 }
 
 .content .card .details .one i {
-    color: #2db94d;
+  color: hsl(120, 100%, 25.1%);
 }
 
 .content .card .details i.fa-times {
-    color: #cd3241;
+  color: hsl(0, 100%, 50%);
 }
 
 .content .card button {
-    outline: none;
-    border: none;
-    height: 42px;
-    color: #fff;
-    margin-top: 30px;
-    border-radius: 3px;
-    font-size: 18px;
-    width: 100%;
-    display: block;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    letter-spacing: 1px;
+  display: block;
+  background: hsl(0, 0%, 3.1%, 0.3);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.12rem;
+  letter-spacing: 1px;
+  margin-top: 1.87rem;
+  width: 100%;
+  height: 2.62rem;
+  border: none;
+  border-radius: 0.187rem;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .content .one .top,
 .content .one .button {
-    background: #14eb6e;
+  background: hsl(0, 0%, 3.1%, 0.3);
 }
 
 .content .two .top,
 .content .two button {
-    background: #e87130;
+  background: hsl(0, 0%, 3.1%, 0.3);
 }
 
 .content .three .top,
 .content .three button {
-    background: #11bcc3;
+  background: hsl(0, 0%, 3.1%, 0.3);
 }
 
 .content button:hover {
-    filter: brightness(90%);
+  filter: brightness(60%);
 }
 
 .content .one ::selection {
-    background: #8af5b6;
+  background: hsl(16.2, 100%, 50%);
 }
 
 .content .two ::selection {
-    background: #f2b08c;
+  background: hsl(240, 100%, 40.2%);
 }
 
 .content .three ::selection {
-    background: #d0f9fb;
+  background: hsl(300, 100%, 25.1%);
 }
 
-@media (max-width: 1000px) {
-    .content .card {
-        background: #fff;
-        width: calc(50% - 20px);
-        margin-bottom: 30px;
-    }
+#first {
+  background: hsl(16.2, 100%, 50%);
+  color: hsl(0, 0%, 100%);
 }
 
-@media (max-width: 715px) {
-    .content .card {
-        width: 100%;
-    }
+#second {
+  background: hsl(240, 100%, 40.2%);
+  color: hsl(0, 0%, 100%);
+}
+
+#third {
+  background: hsl(300, 100%, 25.1%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 62.5em) {
+  .content .card {
+    background: hsl(0, 0%, 100%);
+    margin-bottom: 1.87rem;
+    width: calc(50% - 1.25rem);
+  }
+}
+
+@media (max-width: 44.68em) {
+  .content .card {
+    width: 100%;
+  }
 }

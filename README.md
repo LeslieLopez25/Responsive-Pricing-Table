@@ -2,12 +2,13 @@
 
 <h2>A table for prices using HTML and CSS.</h2>
 
-<p>This project is created using a bit of flexbox, position property, and CSS custom properties. I created this following the tutorial of Dev Ed. I've changed the color scheme, image, and updated the values of measures from px to rem. I liked building this project, especially learning how you create the 3d effect using JavaScript. This project is beginner friendly.</p>
+<p>This project is created using a bit of flexbox and position property. I created this following the tutorial of CodingLab. I've changed the color scheme and updated the values of measures from px to rem and em. This project was fun to create and to learn how to build a simple pricing table.</p>
 
 ### Link
 
-- Live Site: [Pricing Table]()
+- Live Site: [Pricing Table](https://leslielopez25.github.io/Responsive-Pricing-Table/)
 
 ### Screenshot
 
-<img src="screenshot.png" width="400">
+<img src="desktop.png" width="400">
+<img src="mobile.png" width="400">
